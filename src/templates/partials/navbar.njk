@@ -1,16 +1,16 @@
-<nav class="navbar">
+<nav class="navbar {% if section != 'index' %} navbar-scroll {% endif %}">
   <a href="index.html">
     <div class="navbar-logo-container">
       <img class="navbar-logo" src="img/logos/logo-white.png" alt="Sic navbar logo">
-      <img class="navbar-logo-scroll" src="img/logos/logo-blue.png" alt="Sic navbar logo blue">
+      <img class="navbar-logo-scroll {% if section != 'index' %} show-icon {% endif %}" src="img/logos/logo-blue.png" alt="Sic navbar logo blue">
     </div>
   </a>
   <div class="navbar-sections-container">
     <div class="navbar-sections-content">
-      <button class="barlow-bold fs-14 navbar-sections-title" onclick="myFunction()">EMPRESA
+      <button class="barlow-bold fs-14 navbar-sections-title open-dropdown {% if section != 'index' %} navbar-sections-scroll {% endif %}" onclick="myFunction()">EMPRESA
         <div class="navbar-dropdown-icon-container">
           <img class="navbar-dropdown-icon" src="img/icons/icon-dropdown.png">
-          <img class="navbar-dropdown-icon-scroll" src="img/icons/icon-dropdown-blue.png">
+          <img class="navbar-dropdown-icon-scroll {% if section != 'index' %} show-icon {% endif %}" src="img/icons/icon-dropdown-blue.png">
         </div>
       </button>
       <div id="myDropdown" class="dropdown-content">
@@ -24,14 +24,14 @@
     </div>
     <div class="navbar-sections-content">
       <a href="">
-        <span class="barlow-bold fs-14 navbar-sections-title">SOLUCIONES</span>
+        <span class="barlow-bold fs-14 navbar-sections-title {% if section != 'index' %} navbar-sections-scroll {% endif %}">SOLUCIONES</span>
       </a>
     </div>
     <div class="navbar-sections-content">
-      <button class="barlow-bold fs-14 navbar-sections-title open-dropdown" onclick="myFunction2()">CONTACTO
+      <button class="barlow-bold fs-14 navbar-sections-title open-dropdown {% if section != 'index' %} navbar-sections-scroll {% endif %}" onclick="myFunction2()">CONTACTO
         <div class="navbar-dropdown-icon-container">
           <img class="navbar-dropdown-icon" src="img/icons/icon-dropdown.png">
-          <img class="navbar-dropdown-icon-scroll" src="img/icons/icon-dropdown-blue.png">
+          <img class="navbar-dropdown-icon-scroll  {% if section != 'index' %} show-icon {% endif %}" src="img/icons/icon-dropdown-blue.png">
         </div>
       </button>
       <div id="myDropdown2" class="dropdown-content">
@@ -45,19 +45,19 @@
     </div>
     <div class="navbar-sections-content">
       <a href="">
-        <span class="barlow-bold fs-14 navbar-sections-title">COTIZA</span>
+        <span class="barlow-bold fs-14 navbar-sections-title {% if section != 'index' %} navbar-sections-scroll {% endif %}">COTIZA</span>
       </a>
     </div>
     <div class="navbar-separator"></div>
     <div class="navbar-lang-container">
       <div class="navbar-lang-content">
         <a href="">
-          <span class="barlow-bold fs-14 navbar-sections-title">ES</span>
+          <span class="barlow-bold fs-14 navbar-sections-title {% if section != 'index' %} navbar-sections-scroll {% endif %}">ES</span>
         </a>
       </div>
       <div class="navbar-lang-content">
         <a href="">
-          <span class="barlow-bold fs-14 navbar-sections-title">EN</span>
+          <span class="barlow-bold fs-14 navbar-sections-title {% if section != 'index' %} navbar-sections-scroll {% endif %}">EN</span>
         </a>
       </div>
     </div>
@@ -68,7 +68,7 @@
         </div>
         <div class="navbar-dropdown-icon-container">
           <img class="navbar-dropdown-icon" src="img/icons/icon-dropdown.png">
-          <img class="navbar-dropdown-icon-scroll" src="img/icons/icon-dropdown-blue.png">
+          <img class="navbar-dropdown-icon-scroll  {% if section != 'index' %} show-icon {% endif %}" src="img/icons/icon-dropdown-blue.png">
         </div>
       </button>
       <div id="myDropdown3" class="dropdown-content">
