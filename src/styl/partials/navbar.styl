@@ -1,95 +1,307 @@
-.site-navbar
-  background white
+.navbar
+  background transparent
   display flex
   align-items center
-  height 78px // Change
+  height 107px
+  justify-content space-between
   left 0
+  padding 0 200px
   position fixed
   top 0
   width 100%
   z-index 12
 
-  & + main
-    padding-top 78px // Change
+  &-scroll
+    background-color $white
+    box-shadow 0 6px 8px 0 rgba(0, 0, 0, 0.2)
 
-.site-navbar__menu-trigger,
-.site-navbar__mobile-logo-container
+  &-logo
+  &-logo-scroll
+    display none
+    height 47px
+    width 140px
+
+  &-sections
+    &-container
+      align-items center
+      display flex
+      flex-direction row
+
+    &-title
+      background-color transparent
+      border none
+      cursor pointer
+      display flex
+      flex-direction row
+
+    &-content
+      cursor pointer
+      display flex
+      flex-direction row
+      margin-right 20px
+      position relative
+
+    &-scroll
+      color $blue
+
+  &-lang
+    &-container
+      display flex
+      flex-direction row
+
+    &-content
+      margin-right 15px
+
+  &-dropdown
+    &-icon,
+    &-icon-scroll
+      display none
+      height 4px
+      width 6px
+
+      &-container
+        display flex
+        margin 6px 0 0 5px
+
+  &-separator
+    background-color $white
+    height 21px
+    margin 0 20px 0 0
+    width 1px
+
+  &-flag
+    height 14px
+    width 24px
+
+    &-container
+      display flex
+      flex-direction row
+      margin-top 2px
+      position relative
+
+      & .dropdown-content
+        min-width 65px
+
+.dropbtn
+  background-color #3498DB
+  color white
+  padding 16px
+  font-size 16px
+  border none
+  cursor pointer
+
+.dropbtn:hover, .dropbtn:focus
+  background-color #2980B9
+
+.dropdown
+  position relative
+  display inline-block
+
+.dropdown-content
+  display none
+  position absolute
+  background-color #f1f1f1
+  overflow auto
+  box-shadow 0px 8px 16px 0px rgba(0,0,0,0.2)
+  z-index 1
+  padding 10px 0
+  top 30px
+  left -10px
+  min-width 145px
+
+.dropdown-content
+  a
+    span
+      color $grayLight
+      font-size remify(12px)
+      padding 0
+      text-decoration none
+      display block
+
+.show 
+  display block
+
+.hamburger-menu-container
   display none
 
-.site-navbar__menu-trigger
-  color white // Change
+.navbar-hamburguer-visibility
+  left -100px
+  position absolute
 
-.site-navbar__desktop-logo-container
-  img
-    width remify(150) // Change
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
 
-.site-navbar__menu-container
-  flex-grow 1
-  text-align right
-  height 100%
+.dropdown-content a {
+  color: black;
+  padding: 10px 16px;
+  text-decoration: none;
+  display: block;
+}
 
-.site-navbar__menu
-  height 100%
-  display flex
-  align-items center
-  justify-content flex-end
+.dropdown-content a:hover {background-color: $gray}
 
-.site-navbar__menu-link
-  color black // Change
-  font-size remify(19) // Change
+.show-icon
+  display block !important
 
-  &:hover, &.active
-    color white // Change
+@media screen and (min-width 860px) and (max-width 1130px)
+  .navbar
+    padding 0 60px
 
-@media screen and (max-width: 876px) // Change
-  .site-navbar
-    justify-content space-between
-    height 56px // Change
-    padding 0 18px // Change
+@media screen and (min-width 769px) and (max-width 859px)
+  .navbar
+    padding 0 30px
 
-  .site-navbar__desktop-logo-container
-    img
-      height remify(20) // Change
-      width auto
+    &-logo,
+      &-logo-scroll
+        height 35px
+        width 100px
 
-  .site-navbar__mobile-logo-container
-    display block
-    center-block()
-    width 70% // Change
+@media screen and (max-width 768px)
+  .navbar
+    height 70px
+    padding 0 30px
 
-    img
-      width 100%
+    &-logo,
+    &-logo-scroll
+      height 30px
+      width 90px
 
-  .site-navbar__menu-trigger
-    display block
-    float right
-    font-size 18px // Change
+    &-sections
+      &-content
+        margin 0 0 10px 0
 
-  .site-navbar__menu-container
-    background white // Change
-    height 100vh
-    margin-right 0
-    overflow-y auto
-    position fixed
-    right -280px
-    top 0
-    transition right 0.2s
-    width 280px
-    padding-top 25px // Change
+    &-separator
+      height 1px
+      margin 20px 0
+      width 21px
 
-  .site-navbar__menu-container--show-menu
-    right 0
+    &-lang
+      &-container
+        margin-bottom 20px
 
-  .site-navbar__menu
-    margin-bottom 30px // Change
-    margin-top 30px // Change
-    text-align left
-    height auto
-    flex-wrap wrap
+  .navbar-sections-container
+    display none
 
-  .site-navbar__menu-link
+  .navbar-option-link
     display block
     height auto
     display block
     text-align left
     flex-basis 100%
+
+  .navbar-hamburguer-visibility
+    position initial
+      
+  .navbar-hamburguer
+    cursor pointer
+    transition 0.3s
+
+    &:hover
+      background-color $sGreen
+      transition 0.3s
+
+  .navbar-hamburger-icon,
+  .navbar-hamburger-icon-scroll
+    display none
+    height auto
+    width 30px
+    
+  .align-content-hamburguer
+    display flex
+    flex-direction column
+    justify-content center
+    
+  .line-hamburguer-base
+    height 1px
+    background-color #fff
+
+  .line-hamburguer-lg
+    width: 15px
+    
+  .line-hamburguer-md
+    width 7.5px
+    
+  .margin-vertical-4px
+    margin 4px 0px
+
+  .hamburger-menu-container
+    background $blue
+    display inline
+    left 0
+    padding-bottom 50px
+    position fixed
+    top 0
+    width 0%
+    z-index 13
+    bottom 0
+    overflow scroll
+    -webkit-transition width 0.5s
+    transition width 0.5s
+    
+  .hamburger-menu-header
+    align-items center
+    display flex
+    flex-direction row
+    justify-content space-between
+    padding 22px 36px 50px 36px
+    
+  .hamburger-logo
+    height 35px
+    width 100px
+    
+  .hamburger-close-container
+    cursor pointer
+    
+  .hamburger-close
+    height 16px
+    width 16px
+
+  .hamburger-menu-body
+    margin-left 36px
+
+  .hamburger-option-link
+    color #fff
+    cursor pointer
+    font-size remify(12)
+    letter-spacing 1.4px
+    margin 20px 0
+    text-transform uppercase
+
+    &:hover
+      .hamburger-text
+        font-weight bold
+        transition all 0.4s
+
+  .link-decorator
+    background-color #ffffff
+    transition all 0.4s
+
+  .hamburger-text
+    padding 10px 0
+
+    &-active
+      font-weight bold
+
+  .hamburger-dropdown-container
+    position relative
+
+  .down-triangle-container
+    left 80px
+    right initial
+
+  .hamburger-text-container
+    margin 30px 0
+
+  .dropdown
+    display initial
+
+  .dropdown-content
+    box-shadow initial
+    margin-left -36px
+    position relative
+
+    & a
+      padding-left 36px
+      
