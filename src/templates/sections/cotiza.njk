@@ -1,0 +1,43 @@
+{% extends "partials/base.njk" %}
+
+{% block meta %}
+<title>SIC | Expertos en reparación de equipos de cómputo</title>
+{% endblock %}
+
+{% block content %}
+<div class="quote">
+  <div class="quote-form-container">
+    <div class="quote-title-container">
+      <h1 class="fs-39 barlow-light">Cotiza</h1>
+    </div>
+    <form class="quote-form">
+      <div class="material-container">
+        <label class="material-label opensans-semibold" for="name">Nombre</label>
+        <input class="material-input opensans-semibold" type="" name="" id="name">
+      </div>
+      <div class="material-container">
+        <label class="material-label opensans-semibold" for="email">Correo electrónico</label>
+        <input class="material-input opensans-semibold" type="" name="" id="email">
+      </div>
+      <div class="select">
+        <select class="select-text opensans-semibold" required>
+          <option value="" disabled selected></option>
+          <option value="1">Option 1</option>
+          <option value="2">Option 2</option>
+          <option value="3">Option 3</option>
+        </select>
+        <span class="select-highlight"></span>
+        <span class="select-bar"></span>
+        <label class="select-label opensans-semibold">Solución</label>
+      </div>
+      <div class="material-container">
+        <label class="material-label opensans-semibold" for="message">Mensaje</label>
+        <input class="material-input opensans-semibold" type="" name="" id="message">
+      </div>
+      <div class="contact-form-button-container">
+        <button class="sic-button barlow-bold fs-13">enviar</button>
+      </div>
+    </form>
+  </div>
+</div>
+{% endblock %}
