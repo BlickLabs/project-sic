@@ -10,25 +10,25 @@
     <div>
       <h1 class="fs-39 barlow-light">Contacto</h1>
     </div>
-    <form class="contact-form">
+    <form class="contact-form" name="sic-contact-form" method="post" action="http://integrations.blick.mx/sic/contact/form/">
       <div class="contact-form-column">
         <div class="material-container">
           <label class="material-label opensans-semibold" for="name">Nombre</label>
-          <input class="material-input opensans-semibold" type="" name="" id="name">
+          <input class="material-input opensans-semibold" type="text" name="name" id="name" required>
         </div>
         <div class="material-container">
           <label class="material-label opensans-semibold" for="email">Correo electrónico</label>
-          <input class="material-input opensans-semibold" type="" name="" id="email">
+          <input class="material-input opensans-semibold" type="email" name="email" id="email" required>
         </div>
       </div>
       <div>
         <div class="material-container">
           <label class="material-label opensans-semibold" for="telephone">Teléfono</label>
-          <input class="material-input opensans-semibold" type="" name="" id="telephone">
+          <input class="material-input opensans-semibold" type="tel" name="phone" id="telephone">
         </div>
         <div class="material-container">
           <label class="material-label opensans-semibold" for="message">Mensaje</label>
-          <input class="material-input opensans-semibold" type="" name="" id="message">
+          <input class="material-input opensans-semibold" type="text" name="message" id="message">
         </div>
       </div>
       <div class="contact-form-button-container">
