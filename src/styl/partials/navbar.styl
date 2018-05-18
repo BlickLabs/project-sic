@@ -59,6 +59,11 @@
       height 4px
       width 6px
 
+    &-icon
+      &-mobile
+        height 4px
+        width 6px
+
       &-container
         display flex
         margin 6px 0 0 5px
@@ -139,6 +144,9 @@
   text-decoration: none;
   display: block;
 }
+
+.active-link
+  color #3b79d1
 
 .dropdown-content a:hover {background-color: $gray}
 
@@ -227,7 +235,7 @@
     margin 4px 0px
 
   .hamburger-menu-container
-    background $blue
+    background $blueUltra
     display inline
     left 0
     padding-bottom 50px
@@ -245,7 +253,7 @@
     display flex
     flex-direction row
     justify-content space-between
-    padding 22px 36px 50px 36px
+    padding 22px 36px 23px 36px
     
   .hamburger-logo
     height 35px
@@ -257,9 +265,6 @@
   .hamburger-close
     height 16px
     width 16px
-
-  .hamburger-menu-body
-    margin-left 36px
 
   .hamburger-option-link
     color #fff
@@ -299,9 +304,28 @@
 
   .dropdown-content
     box-shadow initial
+    left 35px
     margin-left -36px
-    position relative
+    position absolute
+    top 25px
 
     & a
       padding-left 36px
+
+  .hamburger-separator
+    background-color $white
+    height 1px
+    margin 15px 0
+    width 100%
+
+  .navbar-sections-content,
+  .navbar-lang-container,
+  .navbar-flag-container
+    margin 0 0 0 28px
+
+  .navbar-lang-container
+    margin-bottom 20px
+    margin-top 30px
+
+
       
