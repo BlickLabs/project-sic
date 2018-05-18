@@ -69,7 +69,24 @@
   font-size 12px
   transform translateY(0)
 
+.anchor
+  &-phone
+    &-desktop
+      display block
+
+    &-mobile
+      display none
+
 @media screen and (max-width 970px)
   .material
     &-container
       width 250px
+
+@media screen and (max-width 689px)
+  .anchor
+    &-phone
+      &-desktop
+        display none
+
+      &-mobile
+        display block
