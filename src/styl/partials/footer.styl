@@ -28,9 +28,8 @@
       flex-direction row
       margin-bottom 24px
 
-      &:hover
-        color $white
-        text-decoration underline
+      &:hover span
+        color #3b79d1
 
     &-column
       &:first-child
@@ -50,16 +49,15 @@
   &-view
     margin-top 45px
 
-    & a:hover
-      color $white
+    & a:hover span
+      color #3b79d1
       text-decoration underline
 
     &-link
       margin-bottom 15px
 
-      &:hover
-        color $white
-        text-decoration underline
+      &:hover span
+        color #3b79d1
 
       & span
         letter-spacing 0.9px
@@ -93,7 +91,7 @@
       width 12px
 
 #last-footer-info-content
-  max-width 294px
+  max-width 252px
 
 @media screen and (min-width 920px) and (max-width 1100px)
   .footer
@@ -152,13 +150,16 @@
             display flex
             flex-wrap wrap
             justify-content center
-            max-width 242px
+            max-width 244px
 
       &-bottom
         &-mobile
           display flex
           flex-direction row
           margin-top 20px
+
+          &:hover a span
+            color #3b79d1
 
       &-copyright
         margin-left 20px

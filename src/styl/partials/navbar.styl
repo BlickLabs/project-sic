@@ -67,6 +67,7 @@
       &-container
         display flex
         margin 6px 0 0 5px
+        z-index -1
 
   &-separator
     background-color $white
@@ -180,6 +181,9 @@
       &-content
         margin 0 0 10px 0
 
+        & span
+          font-size 14px
+
     &-separator
       height 1px
       margin 20px 0
@@ -188,6 +192,10 @@
     &-lang
       &-container
         margin-bottom 20px
+
+      &-content
+        & span
+          font-size 14px
 
   .navbar-sections-container
     display none
@@ -313,10 +321,9 @@
       padding-left 36px
 
   .hamburger-separator
-    background-color $white
+    background-color transparent
     height 1px
     margin 15px 0
-    width 100%
 
   .navbar-sections-content,
   .navbar-lang-container,
