@@ -18,3 +18,7 @@ aboutCarousel.owlCarousel ({
     }
   }
 });
+
+aboutCarousel.each(function(index) {
+  $(this).find('.owl-nav, .owl-dots').wrapAll("<div class='about-navigation-controls'></div>");
+});
