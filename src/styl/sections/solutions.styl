@@ -120,8 +120,8 @@
       & .owl-dot.active,
       & .owl-dot
         border-radius 100px
-        height 11px
-        width 11px
+        height 8px
+        width 8px
 
       & .owl-dot.active
         background-color $blue !important
@@ -196,6 +196,13 @@
           height 50px
           width 50px
 
+        & .owl-prev
+          right 40px
+
+        & .owl-next
+          left -25px
+          right initial
+
 @media screen and (max-width 768px)
   .solutions
     margin-top 70px
@@ -203,7 +210,7 @@
 @media screen and (max-width 460px)
   .solutions
     background-image url("../img/backgrounds/bg-solutions-mobile.jpg")
-    background-position center
+    background-position right -90px top
 
     &-title
       &-container
