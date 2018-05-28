@@ -34,6 +34,13 @@
     justify-content center
     padding-top 109px
 
+    &-button
+      &-desktop
+        display block
+
+      &-mobile
+        display none
+
     &-title
       &-container
         margin-bottom 18px
@@ -194,7 +201,9 @@
       margin-left 14%
 
     &-iframe
-      margin-left 90px
+      display flex
+      justify-content center
+      margin 200px 0 100px 0
 
     &-contact
       &-container
@@ -340,6 +349,19 @@
       height auto
       padding 40px 30px
 
+      &-button
+        &-desktop
+          display none
+
+        &-mobile
+          display block
+          margin-top 40px
+
+          &-container
+            display flex
+            justify-content flex-end
+            width 100%
+
       &-title
         &-container
           max-width initial
@@ -361,7 +383,7 @@
       align-items center
       flex-direction column
       height auto
-      padding 50px 30px 100px 30px
+      padding 50px 30px 60px 30px
 
       &-info
         &-container
@@ -371,7 +393,7 @@
         &-container
           height auto
           justify-content space-between
-          margin 40px 0 0 0
+          margin 15px 0 35px 0
           max-width 318px
           width 100%
 
@@ -404,6 +426,13 @@
           width 100%
 
     &-service
+      &-iframe
+        display block
+        margin-left auto
+        margin-right auto
+        overflow auto
+        width 260px
+
       &-content
         align-items center
         flex-direction column
@@ -439,3 +468,19 @@
       &-logos
         &-container
           max-width 406px
+
+@media screen and (max-width 433px)
+  .home
+    &-solutions
+      max-width 320px
+
+      &-info
+        &-content
+          margin 0 0 30px 0 !important
+          width 122px
+
+          & span
+            font-size 10px
+
+          &:nth-child(odd)
+            margin-right 15px !important
