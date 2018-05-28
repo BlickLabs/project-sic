@@ -219,54 +219,53 @@
         </div>
         <div class="where-locations-info">
           <div class="where-pins-container">
-            <!-- <p onclick="radioON();">Click me</p> -->
             <div class="where-locations-title-container">
               <h2 class="where-locations-title opensans-regular">Conoce nuestros puntos de venta</h2>
             </div>
             <div class="where-locations-pins-container">
-              <div class="where-locations-pins">
+              <div class="where-locations-pins" id="changeCdmx">
                 <div class="where-locations-icon-container">
                   <img class="where-icon" src="img/icons/icon-location.png">
                 </div>
                 <span class="fs-16 opensans-regular">CDMX</span>
               </div>
-              <div class="where-locations-pins">
+              <div class="where-locations-pins"  id="changeBogota">
                 <div class="where-locations-icon-container">
                   <img class="where-icon" src="img/icons/icon-location.png">
                 </div>
                 <span class="fs-16 opensans-regular">Bogotá</span>
               </div>
-              <div class="where-locations-pins">
+              <div class="where-locations-pins" id="changeEdomex">
                 <div class="where-locations-icon-container">
                   <img class="where-icon" src="img/icons/icon-location.png">
                 </div>
                 <span class="fs-16 opensans-regular">Estado de México</span>
               </div>
-              <div class="where-locations-pins">
+              <div class="where-locations-pins" id="changeMedellin">
                 <div class="where-locations-icon-container">
                   <img class="where-icon" src="img/icons/icon-location.png">
                 </div>
                 <span class="fs-16 opensans-regular">Medellín</span>
               </div>
-              <div class="where-locations-pins">
+              <div class="where-locations-pins" id="changeGuadalajara">
                 <div class="where-locations-icon-container">
                   <img class="where-icon" src="img/icons/icon-location.png">
                 </div>
                 <span class="fs-16 opensans-regular">Guadalajara</span>
               </div>
-              <div class="where-locations-pins">
+              <div class="where-locations-pins" id="changeSantiago">
                 <div class="where-locations-icon-container">
                   <img class="where-icon" src="img/icons/icon-location.png">
                 </div>
                 <span class="fs-16 opensans-regular">Santiago</span>
               </div>
-              <div class="where-locations-pins">
+              <div class="where-locations-pins" id="changeMonterrey">
                 <div class="where-locations-icon-container">
                   <img class="where-icon" src="img/icons/icon-location.png">
                 </div>
                 <span class="fs-16 opensans-regular">Monterrey</span>
               </div>
-              <div class="where-locations-pins">
+              <div class="where-locations-pins"  id="changeBuenosAires">
                 <div class="where-locations-icon-container">
                   <img class="where-icon" src="img/icons/icon-location.png">
                 </div>
@@ -276,25 +275,25 @@
             
             <div class="where-pins-carousel-mobile owl-carousel">
               <div>
-                <div class="where-locations-pins">
+                <div class="where-locations-pins" id="changeCdmx">
                   <div class="where-locations-icon-container">
                     <img class="where-icon" src="img/icons/icon-location.png">
                   </div>
                   <span class="fs-16 opensans-regular">CDMX</span>
                 </div>
-                <div class="where-locations-pins">
+                <div class="where-locations-pins" id="changeEdomex">
                   <div class="where-locations-icon-container">
                     <img class="where-icon" src="img/icons/icon-location.png">
                   </div>
                   <span class="fs-16 opensans-regular">Estado de México</span>
                 </div>
-                <div class="where-locations-pins">
+                <div class="where-locations-pins" id="changeGuadalajara">
                   <div class="where-locations-icon-container">
                     <img class="where-icon" src="img/icons/icon-location.png">
                   </div>
                   <span class="fs-16 opensans-regular">Guadalajara</span>
                 </div>
-                <div class="where-locations-pins">
+                <div class="where-locations-pins" id="changeMonterrey">
                   <div class="where-locations-icon-container">
                     <img class="where-icon" src="img/icons/icon-location.png">
                   </div>
@@ -302,25 +301,25 @@
                 </div>
               </div>
               <div>
-                <div class="where-locations-pins">
+                <div class="where-locations-pins" id="changeBogota">
                   <div class="where-locations-icon-container">
                     <img class="where-icon" src="img/icons/icon-location.png">
                   </div>
                   <span class="fs-16 opensans-regular">Bogotá</span>
                 </div>
-                <div class="where-locations-pins">
+                <div class="where-locations-pins" id="changeMedellin">
                   <div class="where-locations-icon-container">
                     <img class="where-icon" src="img/icons/icon-location.png">
                   </div>
                   <span class="fs-16 opensans-regular">Medellín</span>
                 </div>
-                <div class="where-locations-pins">
+                <div class="where-locations-pins" id="changeSantiago">
                   <div class="where-locations-icon-container">
                     <img class="where-icon" src="img/icons/icon-location.png">
                   </div>
                   <span class="fs-16 opensans-regular">Santiago</span>
                 </div>
-                <div class="where-locations-pins">
+                <div class="where-locations-pins"  id="changeBuenosAires">
                   <div class="where-locations-icon-container">
                     <img class="where-icon" src="img/icons/icon-location.png">
                   </div>
@@ -330,7 +329,7 @@
             </div>
           </div>
           <div class="where-map-container">
-            <iframe class="where-map" id="ifr" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.623677498308!2d-99.17814248452544!3d19.4286591868866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff4cfe7355c1%3A0xebffe2f26ef25fcb!2sCalle+Milton+20%2C+Anzures%2C+11590+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses-419!2smx!4v1526590631258" width="625" height="385" frameborder="0" style="border:0" allowfullscreen></iframe>
+            <iframe class="where-map" id="iframeLocations" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.623677498308!2d-99.17814248452544!3d19.4286591868866!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff4cfe7355c1%3A0xebffe2f26ef25fcb!2sCalle+Milton+20%2C+Anzures%2C+11590+Ciudad+de+M%C3%A9xico%2C+CDMX!5e0!3m2!1ses-419!2smx!4v1526590631258" width="625" height="385" frameborder="0" style="border:0" allowfullscreen></iframe>
           </div>
         </div>
         <div class="where-locations-button-container">
@@ -593,7 +592,7 @@
           </a>
         </div>
         <div class="footer-view">
-          <a href="">
+          <a href="aviso-de-privacidad.html">
             <span class="barlow-medium fs-14  ">Aviso de privacidad</span>
           </a>
         </div>
@@ -687,7 +686,7 @@
       </div>
     </div>
     <div class="footer-info-bottom-mobile">
-      <a href="">
+      <a href="aviso-de-privacidad.html">
         <span class="barlow-medium fs-14  ">Aviso de privacidad</span>
       </a>
       <div class="footer-info-copyright">
