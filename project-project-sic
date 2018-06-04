@@ -5,7 +5,7 @@ server {
   root /home/static/project-sic;
   index index.html index.htm;
 
-  server_name www.sandbox.sic.getmore.mx sandbox.sic.getmore.mx;
+  server_name sandbox.sic.getmore.mx;
 
   location / {
       try_files $uri $uri/ =404;
