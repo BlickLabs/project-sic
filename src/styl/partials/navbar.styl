@@ -82,11 +82,13 @@
     &-container
       display flex
       flex-direction row
-      margin-top 2px
       position relative
 
       & .dropdown-content
         min-width 65px
+
+    &-content
+      z-index -1
 
 .dropbtn
   background-color #3498DB
@@ -318,7 +320,7 @@
     top 25px
 
     & a
-      padding-left 36px
+      padding-left 20px
 
   .hamburger-separator
     background-color transparent
@@ -329,6 +331,11 @@
   .navbar-lang-container,
   .navbar-flag-container
     margin 0 0 0 28px
+
+  .navbar
+    &-flag
+      &-content
+        z-index 1
 
   .navbar-lang-container
     margin-bottom 20px
