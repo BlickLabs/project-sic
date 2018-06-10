@@ -290,15 +290,30 @@
 
       &-carousel
         &-navigation
-          & .owl-dots
-            bottom -15px
-            left 0
-            margin 0 auto
-            right 0
-            width 36px
+          &-mobile
+            & .owl-dots
+              bottom -23px
+              left 0
+              margin 0 auto
+              right 0
+              width 36px
 
-          & .owl-dot
-            border solid 1px #fff !important
+            & .owl-dot
+              border solid 1px #fff !important
+
+            & .owl-dot
+              background-color transparent !important
+
+            & .owl-dot.active
+              background-color $white !important
+
+            & .owl-nav
+              bottom -28px
+              position absolute
+              right 0
+
+            & .owl-prev
+              margin-right 20px
           
         &-mobile
           display block !important
