@@ -56,8 +56,9 @@ whereWeAreCarouselMobile.each(function(index) {
 
 wherePinsCarouselMobile.owlCarousel ({
   loop: false,
-  nav: false,
+  nav: true,
   dots: true,
+  navText: ['<img class="solutions-navigation-icon" src="img/icons/icon-arrow-left.png" />', '<img class="solutions-navigation-icon" src="img/icons/icon-arrow-right.png" />'],
   responsive:{
     0:{
       items:1
@@ -75,5 +76,5 @@ wherePinsCarouselMobile.owlCarousel ({
 });
 
 wherePinsCarouselMobile.each(function(index) {
-  $(this).find('.owl-nav, .owl-dots').wrapAll("<div class='where-pins-carousel-navigation'></div>");
+  $(this).find('.owl-nav, .owl-dots').wrapAll("<div class='where-pins-carousel-navigation-mobile'></div>");
 });

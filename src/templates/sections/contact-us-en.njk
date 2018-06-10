@@ -1,38 +1,38 @@
 {% extends "partials/base.njk" %}
 
 {% block meta %}
-<title>SIC | Contáctanos</title>
+<title>SIC | Contact us</title>
 {% endblock %}
 
 {% block content %}
 <div class="contact">
   <div class="contact-form-container">
     <div>
-      <h1 class="fs-39 barlow-light">Contacto</h1>
+      <h1 class="fs-39 barlow-light">Contact us</h1>
     </div>
-    <form class="contact-form" name="sic-contact-form" method="post" action="http://integrations.blick.mx/sic/contact/form/">
+    <form class="contact-form" name="sic-contact-form-en" method="post" action="http://integrations.blick.mx/sic/contact/form/">
       <div class="contact-form-column">
         <div class="material-container">
-          <label class="material-label opensans-semibold" for="name">Nombre</label>
+          <label class="material-label opensans-semibold" for="name">Name</label>
           <input class="material-input opensans-semibold" type="text" name="name" id="name" required>
         </div>
         <div class="material-container">
-          <label class="material-label opensans-semibold" for="email">Correo electrónico</label>
+          <label class="material-label opensans-semibold" for="email">Email</label>
           <input class="material-input opensans-semibold" type="email" name="email" id="email" required>
         </div>
       </div>
       <div>
         <div class="material-container">
-          <label class="material-label opensans-semibold" for="telephone">Teléfono</label>
+          <label class="material-label opensans-semibold" for="telephone">Phone</label>
           <input class="material-input opensans-semibold" type="tel" name="phone" id="telephone">
         </div>
         <div class="material-container">
-          <label class="material-label opensans-semibold" for="message">Mensaje</label>
+          <label class="material-label opensans-semibold" for="message">Message</label>
           <input class="material-input opensans-semibold" type="text" name="message" id="message">
         </div>
       </div>
       <div class="contact-form-button-container">
-        <button class="sic-button barlow-bold fs-13">enviar</button>
+        <button class="sic-button barlow-bold fs-13">Send</button>
       </div>
     </form>
   </div>
