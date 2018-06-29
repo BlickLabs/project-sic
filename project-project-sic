@@ -5,7 +5,7 @@ server {
   root /home/static/project-sic;
   index index.html index.htm;
 
-  server_name sandbox.sic.getmore.mx;
+  server_name sandbox.sic.getmore.mx www.sic-la.com www.sic.com.mx sic-la.com sic.com.mx sic-mx.getmore.mx;
 
   location / {
       try_files $uri $uri/ =404;
