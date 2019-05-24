@@ -18,9 +18,9 @@ function myFunctionHamburger() {
   document.getElementById("myDropdownHamburger").classList.toggle("show");
 }
 
-// function functionDropdownSolucionesHamburger() {
+function functionDropdownSolucionesHamburger() {
   document.getElementById("dropdownSolucionesHamburger").classList.toggle("show");
-// }
+}
 
 function myFunction2Hamburger() {
   document.getElementById("myDropdown2Hamburger").classList.toggle("show");
