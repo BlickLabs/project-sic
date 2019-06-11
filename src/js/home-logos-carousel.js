@@ -15,28 +15,12 @@
 var logosHomeCarousel = $('.home-clients-carousel');
 
 logosHomeCarousel.owlCarousel({
-  loop: true,
+  loop: false,
   center: false,
-  // autoWidth: true,
+  autoWidth: true,
   margin: 0,
   nav: true,
   dots: false,
   navText: ['<img class="navigation-icon" src="img/icons/arrow-blue-left.png" />', '<img class="navigation-icon" src="img/icons/arrow-blue-right.png" />'],
-  responsive:{
-    0: {
-      items: 1
-    },
-    749: {
-      items: 2
-    },
-    980: {
-      items: 3
-    },
-    1220: {
-      items: 4
-    },
-    1440: {
-      items: 5
-    }
-  }
+  
 })
