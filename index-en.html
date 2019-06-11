@@ -63,9 +63,26 @@
       </div>
     </div>
     <div class="navbar-sections-content">
-      <a href="solutions-en.html">
-        <span class="barlow-bold fs-14 navbar-sections-title  ">SOLUTIONS</span>
-      </a>
+      <button class="barlow-bold fs-14 navbar-sections-title open-dropdown  " onclick="functionDropdownSoluciones()">SOLUTIONS
+        <div class="navbar-dropdown-icon-container">
+          <img class="navbar-dropdown-icon" src="img/icons/icon-dropdown.png">
+          <img class="navbar-dropdown-icon-scroll  show-icon " src="img/icons/icon-dropdown-blue.png">
+        </div>
+      </button>
+      <div id="dropdownSoluciones" class="dropdown-content">
+        <a href="corporate-en.html">
+          <span class="barlow-bold fs-14">CORPORATE</span>
+        </a>
+        <a href="technical-service-en.html">
+          <span class="barlow-bold fs-14">TECHNICAL SERVICE</span>
+        </a>
+        <a href="networking-en.html">
+          <span class="barlow-bold fs-14">NETWORKING</span>
+        </a>
+        <a href="equipment-repair-en.html">
+          <span class="barlow-bold fs-14">EQUIPMENT REPAIR</span>
+        </a>
+      </div>
     </div>
     <div class="navbar-sections-content">
       <button class="barlow-bold fs-14 navbar-sections-title open-dropdown  " onclick="myFunction2()">CONTACT US
@@ -160,9 +177,24 @@
       </div>
       <div class="hamburger-separator"></div>
       <div class="navbar-sections-content" data-attribute="">
-        <a href="solutions-en.html" data-attribute="">
-          <span class="barlow-bold fs-14 ">SOLUTIONS</span>
-        </a>
+        <span class="barlow-bold fs-14 open-dropdown  " onclick="functionDropdownSolucionesHamburger()" data-attribute="">SOLUCIONES</span>
+        <div class="navbar-dropdown-icon-container">
+          <img class="navbar-dropdown-icon-mobile" src="img/icons/icon-dropdown.png" data-attribute="">
+        </div>
+        <div id="dropdownSolucionesHamburger" class="dropdown-content">
+          <a href="corporate-en.html">
+            <span class="barlow-bold fs-14">CORPORATE</span>
+          </a>
+          <a href="technical-service-en.html">
+            <span class="barlow-bold fs-14">TECHNICAL SERVICE</span>
+          </a>
+          <a href="networking-en.html">
+            <span class="barlow-bold fs-14">NETWORKING</span>
+          </a>
+          <a href="equipment-repair-en.html">
+            <span class="barlow-bold fs-14">EQUIPMENT REPAIR</span>
+          </a>
+        </div>
       </div>
       <div class="hamburger-separator"></div>
       <div class="navbar-sections-content" data-attribute="">
@@ -230,6 +262,7 @@
       <div class="home-cover-info">
         <div class="home-cover-subtitle-container">
           <h1 class="barlow-light fs-48 typed1en"></h1>
+          <h2 class="barlow-light fs-20" style="margin-top: 25px;">Experts in computer equipment repair</h2>
         </div>
         <a href="quote-en.html">
           <button class="sic-button barlow-bold fs-13">get a quote</button>
@@ -281,7 +314,7 @@
     <div class="home-cover cover-five">
       <div class="home-cover-info">
         <div class="home-cover-subtitle-container">
-          <h1 class="barlow-light fs-48 typed5en"></h1>
+          <h1 class="barlow-light fs-48 typed5"></h1>
         </div>
         <a href="quote-en.html">
           <button class="sic-button barlow-bold fs-13">get a quote</button>
@@ -296,74 +329,64 @@
   <div class="home-solutions">
     <div>
       <div class="home-solutions-title-container">
-        <h2 class="barlow-light fs-39">We deliver excellence</h2>
+        <h2 class="barlow-light fs-39">Our solutions</h2>
       </div>
-      <a href="solutions-en.html" class="home-solutions-button-desktop">
-        <button class="sic-button barlow-bold fs-13">Our Solutions</button>
-      </a>
-    </div>
-    <div class="home-solutions-info-container">
-      <div class="home-solutions-info-content">
-        <div class="home-solutions-icon-container">
-          <img class="home-solutions-icon-renovation" src="img/icons/icon-renovation.png">
-        </div>
-        <span class="opensans-semibold fs-15">Technological refresh<br>(HW/SW)</span>
+      <div class="home-solutions-info-container">
+        <a class="home-solutions-info-content" href="corporate-en.html">
+          <div class="home-solutions-icon-container">
+            <img class="home-solutions-icon-renovation" src="img/icons/icono-corporativo.png">
+          </div>
+          <span class="opensans-semibold fs-15">Corporate</span>
+        </a>
+        <a class="home-solutions-info-content" href="technical-service-en.html">
+          <div class="home-solutions-icon-container">
+            <img class="home-solutions-icon-extension" src="img/icons/icono-servicio-tecnico.png">
+          </div>
+          <span class="opensans-semibold fs-15">Technical service</span>
+        </a>
+        <a class="home-solutions-info-content" href="networking-en.html">
+          <div class="home-solutions-icon-container">
+            <img class="home-solutions-icon-instalation" src="img/icons/icono-redes.png">
+          </div>
+          <span class="opensans-semibold fs-15">Networking</span>
+        </a>
+        <a class="home-solutions-info-content" href="equipment-repair-en.html">
+          <div class="home-solutions-icon-container">
+            <img class="home-solutions-icon-warranty" src="img/icons/icono-reparacion-de-equipos.png">
+          </div>
+          <span class="opensans-semibold fs-15">Equipment Repair</span>
+        </a>
       </div>
-      <div class="home-solutions-info-content">
-        <div class="home-solutions-icon-container">
-          <img class="home-solutions-icon-extension" src="img/icons/icon-extension.png">
-        </div>
-        <span class="opensans-semibold fs-15">Structured cabling<br>design & installation</span>
-      </div>
-      <div class="home-solutions-info-content">
-        <div class="home-solutions-icon-container">
-          <img class="home-solutions-icon-instalation" src="img/icons/icon-instalation.png">
-        </div>
-        <span class="opensans-semibold fs-15">Installation & Maintenance<br>of multivendor equipment</span>
-      </div>
-      <div class="home-solutions-info-content">
-        <div class="home-solutions-icon-container">
-          <img class="home-solutions-icon-warranty" src="img/icons/icon-warranty.png">
-        </div>
-        <span class="opensans-semibold fs-15">On site & carry<br>warranty extensions</span>
-      </div>
-    </div>
-    <div class="home-solutions-button-mobile-container">
-      <a href="solutions-en.html" class="home-solutions-button-mobile">
-        <button class="sic-button barlow-bold fs-13">Our Solutions</button>
-      </a>
     </div>
   </div>
 
   <div class="home-clients">
-    <div class="home-clients-info-container">
-      <div class="home-clients-info">
-        <div class="home-clients-title-container">
-          <h2 class="barlow-light fs-39 sic-text-white">National & International costumers</h2>
-        </div>
-        <h3 class="opensans-regular fs-18">Experts in computer equipment repair</h3>
+    <div class="home-clients-carousel owl-carousel">
+      <div class="home-clients-logo">
+        <img class="home-clients-logo-dell" src="img/logos/logo-dell-emc-color.png">
       </div>
-      <a href="contact-us-en.html" class="home-solutions-button-desktop">
-        <button class="sic-button barlow-bold fs-13">Contact us</button>
-      </a>
+      <div class="home-clients-logo">
+        <img class="home-clients-logo-lenovo" src="img/logos/logo-lenovo-color.png">
+      </div>
+      <div class="home-clients-logo">
+        <img class="home-clients-logo-diebold" src="img/logos/logo-diebold-color.png">
+      </div>
+      <div class="home-clients-logo">
+        <img class="home-clients-logo-enova" src="img/logos/logo-enova-color.png">
+      </div>
+      <div class="home-clients-logo">
+        <img class="home-clients-logo-proseguir" src="img/logos/logo-proseguir-color.png">
+      </div>
+      <div class="home-clients-logo">
+        <img class="home-clients-logo-fedex" src="img/logos/logo-fedex-color.png">
+      </div>
+      <div class="home-clients-logo">
+        <img class="home-clients-logo-cyg" src="img/logos/logo-cyg-color.png">
+      </div>
+      <div class="home-clients-logo">
+        <img class="home-clients-logo-modelo" src="img/logos/logo-modelo-color.png">
+      </div>
     </div>
-    <div class="home-clients-logos-container">
-      <div class="home-clients-logo-content">
-        <img class="home-clients-logo-lenovo" src="img/logos/logo-lenovo.png">
-      </div>
-      <div class="home-clients-logo-content">
-        <img class="home-clients-logo-dell" src="img/logos/logo-dell.png">
-      </div>
-      <div class="home-clients-logo-content">
-        <img class="home-clients-logo-diebold" src="img/logos/logo-diebold.png">
-      </div>
-      <div class="home-clients-logo-content">
-        <img class="home-clients-logo-enova" src="img/logos/logo-enova.png">
-      </div>
-    </div>
-    <a href="contact-us-en.html" class="home-solutions-button-mobile">
-      <button class="sic-button barlow-bold fs-13">Contact us</button>
-    </a>
   </div>
 
   <div class="home-location">
@@ -398,8 +421,10 @@
           <span class="opensans-regular fs-16">Argentina</span>
         </div>
         <div class="home-location-button-container">
-          <a href="office-locations-en.html">
-            <button class="sic-button barlow-bold fs-13">Map</button>
+          <a href="">
+            <a href="office-locations-en.html">
+              <button class="sic-button barlow-bold fs-13">map</button>
+            </a>
           </a>
         </div>
       </div>

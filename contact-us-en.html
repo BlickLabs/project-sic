@@ -63,9 +63,26 @@
       </div>
     </div>
     <div class="navbar-sections-content">
-      <a href="solutions-en.html">
-        <span class="barlow-bold fs-14 navbar-sections-title  navbar-sections-scroll  ">SOLUTIONS</span>
-      </a>
+      <button class="barlow-bold fs-14 navbar-sections-title open-dropdown  navbar-sections-scroll  " onclick="functionDropdownSoluciones()">SOLUTIONS
+        <div class="navbar-dropdown-icon-container">
+          <img class="navbar-dropdown-icon" src="img/icons/icon-dropdown.png">
+          <img class="navbar-dropdown-icon-scroll  show-icon " src="img/icons/icon-dropdown-blue.png">
+        </div>
+      </button>
+      <div id="dropdownSoluciones" class="dropdown-content">
+        <a href="corporate-en.html">
+          <span class="barlow-bold fs-14">CORPORATE</span>
+        </a>
+        <a href="technical-service-en.html">
+          <span class="barlow-bold fs-14">TECHNICAL SERVICE</span>
+        </a>
+        <a href="networking-en.html">
+          <span class="barlow-bold fs-14">NETWORKING</span>
+        </a>
+        <a href="equipment-repair-en.html">
+          <span class="barlow-bold fs-14">EQUIPMENT REPAIR</span>
+        </a>
+      </div>
     </div>
     <div class="navbar-sections-content">
       <button class="barlow-bold fs-14 navbar-sections-title open-dropdown  navbar-sections-scroll   active-link " onclick="myFunction2()">CONTACT US
@@ -160,9 +177,24 @@
       </div>
       <div class="hamburger-separator"></div>
       <div class="navbar-sections-content" data-attribute="">
-        <a href="solutions-en.html" data-attribute="">
-          <span class="barlow-bold fs-14 ">SOLUTIONS</span>
-        </a>
+        <span class="barlow-bold fs-14 open-dropdown  navbar-sections-scroll  " onclick="functionDropdownSolucionesHamburger()" data-attribute="">SOLUCIONES</span>
+        <div class="navbar-dropdown-icon-container">
+          <img class="navbar-dropdown-icon-mobile" src="img/icons/icon-dropdown.png" data-attribute="">
+        </div>
+        <div id="dropdownSolucionesHamburger" class="dropdown-content">
+          <a href="corporate-en.html">
+            <span class="barlow-bold fs-14">CORPORATE</span>
+          </a>
+          <a href="technical-service-en.html">
+            <span class="barlow-bold fs-14">TECHNICAL SERVICE</span>
+          </a>
+          <a href="networking-en.html">
+            <span class="barlow-bold fs-14">NETWORKING</span>
+          </a>
+          <a href="equipment-repair-en.html">
+            <span class="barlow-bold fs-14">EQUIPMENT REPAIR</span>
+          </a>
+        </div>
       </div>
       <div class="hamburger-separator"></div>
       <div class="navbar-sections-content" data-attribute="">
