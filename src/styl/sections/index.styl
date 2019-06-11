@@ -92,8 +92,9 @@
     height 131px
 
     &-carousel
+      margin 0 auto
       position relative
-      // width 1300px
+      width 1180px
 
       & .owl-stage
         display flex
@@ -113,16 +114,20 @@
           top 0
 
         .owl-prev
-          left 34px
+          left -34px
 
         .owl-next
-          right 34px
+          right -34px
 
         .navigation-icon
           height 16px
           width 10px
 
     &-logo
+      display flex
+      justify-content center
+      width 236px
+
       &-dell
         height 32px
         width 188px !important
@@ -156,8 +161,8 @@
         width 104px !important
 
       &-autocom
-        height 62px
-        width 323px !important
+        height 45px
+        width 236px !important
 
   &-location
     background-image url("../img/backgrounds/donde-estamos-fondo.jpg")
@@ -335,6 +340,38 @@
     &-location
       margin-top -60px
 
+////////////////////////////////////////
+// MEDIA QUERIES FOR THE LOGOS CAROUSEL
+////////////////////////////////////////
+
+@media screen and (max-width 1290px)
+  .home
+    &-clients
+      &-carousel
+        width 944px
+
+@media screen and (max-width 1060px)
+  .home
+    &-clients
+      &-carousel
+        width 708px
+
+@media screen and (max-width 840px)
+  .home
+    &-clients
+      &-carousel
+        width 472px
+
+@media screen and (max-width 580px)
+  .home
+    &-clients
+      &-carousel
+        width 236px
+
+////////////////////////////////////////
+// END SECTION
+////////////////////////////////////////
+
 @media screen and (min-width 860px) and (max-width 1130px)
   .home
     &-cover
@@ -421,12 +458,6 @@
           max-width initial
 
       &-info
-        &-container
-          justify-content center
-          height auto
-          margin-left 0
-          width 100%
-
         &-content
           width 140px
 
@@ -511,15 +542,15 @@
 @media screen and (max-width 433px)
   .home
     &-solutions
-      max-width 320px
+      background-position center right 38%
 
       &-info
+        &-container
+          width 100%
+
         &-content
           margin 0 0 30px 0 !important
-          width 122px
+          width 50%
 
           & span
-            font-size 10px
-
-          &:nth-child(odd)
-            margin-right 15px !important
+            font-size 12px
