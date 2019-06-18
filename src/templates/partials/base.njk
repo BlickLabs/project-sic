@@ -25,7 +25,7 @@
   </head>
   <body>
     <div id="page">
-      {% if section == 'index' or section == 'aviso-de-privacidad' or section == 'contacto' or section == 'cotiza' or section == 'donde-estamos' or section == 'garantias' or section == 'quienes-somos' or section == 'reconocimientos' or section == 'soluciones' or section == 'corporativos' or section == 'servicio-tecnico' or section == 'redes' or section == 'reparacion-de-equipos' %}
+      {% if section == 'index' or section == 'aviso-de-privacidad' or section == 'contacto' or section == 'cotiza' or section == 'donde-estamos' or section == 'garantias' or section == 'quienes-somos' or section == 'reconocimientos' or section == 'soluciones' or section == 'corporativo' or section == 'servicio-tecnico' or section == 'redes' or section == 'reparacion-de-equipos' %}
         {% include 'partials/navbar.njk' %}
       {% else %}
         {% include 'partials/navbar-en.njk' %}
@@ -33,7 +33,7 @@
       <main>
         {% block content %}{% endblock %}
       </main>
-      {% if section == 'index' or section == 'aviso-de-privacidad' or section == 'contacto' or section == 'cotiza' or section == 'donde-estamos' or section == 'garantias' or section == 'quienes-somos' or section == 'reconocimientos' or section == 'soluciones' or section == 'corporativos' or section == 'servicio-tecnico' or section == 'redes' or section == 'reparacion-de-equipos' %}
+      {% if section == 'index' or section == 'aviso-de-privacidad' or section == 'contacto' or section == 'cotiza' or section == 'donde-estamos' or section == 'garantias' or section == 'quienes-somos' or section == 'reconocimientos' or section == 'soluciones' or section == 'corporativo' or section == 'servicio-tecnico' or section == 'redes' or section == 'reparacion-de-equipos' %}
         {% include 'partials/footer.njk' %}
       {% else %}
         {% include 'partials/footer-en.njk' %}
