@@ -129,13 +129,13 @@
         </div>
       </button>
       <div id="myDropdown3" class="dropdown-content">
-        <a href="http://www.sicco.com.co/">
+        <a href="https://www.sicco.com.co/">
           <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-col.png">
         </a>
-        <a href="http://sicdeargentina.com.ar/">
+        <a href="https://sicdeargentina.com.ar/">
           <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-arg.png">
         </a>
-        <a href="http://sic-chile.cl/">
+        <a href="https://sic-chile.cl/">
           <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-chi.png">
         </a>
       </div>
@@ -238,13 +238,13 @@
           <img class="navbar-dropdown-icon-mobile" src="img/icons/icon-dropdown.png" data-attribute="">
         </div>
         <div id="myDropdown3Hamburger" class="dropdown-content">
-          <a href="http://www.sicco.com.co/">
+          <a href="https://www.sicco.com.co/">
             <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-col.png">
           </a>
-          <a href="http://sicdeargentina.com.ar/">
+          <a href="https://sicdeargentina.com.ar/">
             <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-arg.png">
           </a>
-          <a href="http://sic-chile.cl/">
+          <a href="https://sic-chile.cl/">
             <img class="navbar-flag navbar-sections-title" src="img/icons/icon-flag-chi.png">
           </a>
         </div>
@@ -261,7 +261,7 @@
     <div class="quote-title-container">
       <h1 class="fs-39 barlow-light">Quote</h1>
     </div>
-    <form class="quote-form" name="sic-quote-form-en" method="post" action="http://integrations.blick.mx/sic/quote/form/">
+    <form class="quote-form" name="sic-quote-form-en" method="POST" id="sic-quote-form">
       <div class="material-container">
         <label class="material-label opensans-semibold" for="name">Name</label>
         <input class="material-input opensans-semibold" type="text" name="name" id="name" required>
@@ -273,10 +273,10 @@
       <div class="select">
         <select class="select-text opensans-semibold" type="text" name="company" required>
           <option value="" disabled selected></option>
-          <option value="Soluciones Corporativas">Corporate Solutions</option>
-          <option value="Soluciones de Networking">Networking Solutions</option>
-          <option value="Soluciones End-User">End-User Solutions</option>
-          <option value="Servicios para equipos fuera de garantía">Out of warranty Solutions</option>
+          <option value="Corporate Solutions">Corporate Solutions</option>
+          <option value="Networking Solutions">Networking Solutions</option>
+          <option value="End-User Solutions">End-User Solutions</option>
+          <option value="Out of warranty Solutions">Out of warranty Solutions</option>
         </select>
         <span class="select-highlight"></span>
         <span class="select-bar"></span>
@@ -287,7 +287,7 @@
         <input class="material-input opensans-semibold" type="text" name="message" id="message">
       </div>
       <div class="contact-form-button-container">
-        <button class="sic-button barlow-bold fs-13">Send</button>
+        <button class="sic-button barlow-bold fs-13" id="js-enviarCotiza" type="submit">Send</button>
       </div>
     </form>
   </div>
