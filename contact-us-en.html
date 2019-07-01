@@ -261,7 +261,7 @@
     <div>
       <h1 class="fs-39 barlow-light">Contact us</h1>
     </div>
-    <form class="contact-form" name="sic-contact-form-en" method="POST" enctype="multipart/form-data" id="sic-contact-form-en">
+    <form class="contact-form" id="sic-contact-form-en" name="sic-contact-form-en" method="post" enctype="multipart/form-data">
       <div class="contact-form-column">
         <div class="material-container">
           <label class="material-label opensans-semibold" for="name">Name</label>
@@ -279,11 +279,11 @@
         </div>
         <div class="material-container">
           <label class="material-label opensans-semibold" for="message">Message</label>
-          <input class="material-input opensans-semibold" type="text" name="message" id="message">
+          <input class="material-input opensans-semibold" type="text" name="message" id="message" required>
         </div>
       </div>
       <div class="contact-form-button-container">
-        <button class="sic-button barlow-bold fs-13" id="js-enviarContacto-en" type="submit">Send</button>
+        <button class="sic-button barlow-bold fs-13">Send</button>
       </div>
     </form>
   </div>
