@@ -10,7 +10,7 @@
     <div>
       <h1 class="fs-39 barlow-light">Contacto</h1>
     </div>
-    <form class="contact-form" name="sic-contact-form" method="post" action="http://integrations.blick.mx/sic/contact/form/">
+    <form class="contact-form" id="sic-contact-form" name="sic-contact-form" method="post" enctype="multipart/form-data">
       <div class="contact-form-column">
         <div class="material-container">
           <label class="material-label opensans-semibold" for="name">Nombre</label>
@@ -28,7 +28,7 @@
         </div>
         <div class="material-container">
           <label class="material-label opensans-semibold" for="message">Mensaje</label>
-          <input class="material-input opensans-semibold" type="text" name="message" id="message">
+          <input class="material-input opensans-semibold" type="text" name="message" id="message" required>
         </div>
       </div>
       <div class="contact-form-button-container">
