@@ -17,6 +17,7 @@ module.exports = {
       favicon: src + '/favicon.ico',
       fonts: src + '/fonts/**/*.*',
       templates_all: src + '/templates/**/*.njk',
+      pdfs: src + '/pdfs/*.pdf',
       templates_dir: src + '/templates/',
       templates_partials: src + '/templates/partials/*.njk',
       templates_sections: src + '/templates/sections/*.njk',
@@ -29,7 +30,8 @@ module.exports = {
       img: build + '/img/',
       fonts: build + '/fonts/',
       html: build + '/*.html',
-      root: build
+      pdfs: build + '/pdfs/*.pdf',
+      root: build,
     },
     dist: {
       css: dist + '/css/',
@@ -38,6 +40,7 @@ module.exports = {
       fonts: dist + '/fonts/',
       html: dist + '/*.html',
       all: dist + '/**/*',
+      pdfs: dist + '/pdfs/*.pdf',
       root: dist
     },
     bower: function (package) {
