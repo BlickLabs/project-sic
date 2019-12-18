@@ -44,3 +44,11 @@
     }
   });
 })();
+
+document.addEventListener("DOMContentLoaded", function () {
+  if (navigator.userAgent.search("Safari") >= 0 && navigator.userAgent.search("Chrome") < 0 && navigator.userAgent.search("Mobile") < 0) {
+    document.querySelector(".ws_safari").style.display = "flex"
+  } else {
+    document.querySelector(".ws_all").style.display = "flex"
+  }
+})
